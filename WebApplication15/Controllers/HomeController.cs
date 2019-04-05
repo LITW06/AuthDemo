@@ -24,8 +24,6 @@ namespace WebApplication15.Controllers
                 vm.Name = user.Name;
             }
 
-
-
             return View(vm);
         }
 
