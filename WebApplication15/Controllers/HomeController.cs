@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
+using AuthDemo.Data;
+using WebApplication15.Models;
 
 namespace WebApplication15.Controllers
 {
@@ -10,20 +12,26 @@ namespace WebApplication15.Controllers
     {
         public ActionResult Index()
         {
-            return View();
+            var vm = new HomePageViewModel
+            {
+                IsAuthenticated = User.Identity.IsAuthenticated
+            };
+
+            if (User.Identity.IsAuthenticated)
+            {
+                var db = new AuthDb(Properties.Settings.Default.ConStr);
+                var user = db.GetByEmail(User.Identity.Name);
+                vm.Name = user.Name;
+            }
+
+
+
+            return View(vm);
         }
 
-        public ActionResult About()
+        [Authorize]
+        public ActionResult Secret()
         {
-            ViewBag.Message = "Your application description page.";
-
-            return View();
-        }
-
-        public ActionResult Contact()
-        {
-            ViewBag.Message = "Your contact page.";
-
             return View();
         }
     }

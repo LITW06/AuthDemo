@@ -5,6 +5,8 @@ VisualStudioVersion = 15.0.28307.102
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebApplication15", "WebApplication15\WebApplication15.csproj", "{6791E5E8-45D8-4CE6-97E1-CBE567C6D674}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AuthDemo.Data", "AuthDemo.Data\AuthDemo.Data.csproj", "{DF001A12-DEA6-48AC-96C1-6DDA16B7A99D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{6791E5E8-45D8-4CE6-97E1-CBE567C6D674}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6791E5E8-45D8-4CE6-97E1-CBE567C6D674}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6791E5E8-45D8-4CE6-97E1-CBE567C6D674}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DF001A12-DEA6-48AC-96C1-6DDA16B7A99D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DF001A12-DEA6-48AC-96C1-6DDA16B7A99D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DF001A12-DEA6-48AC-96C1-6DDA16B7A99D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DF001A12-DEA6-48AC-96C1-6DDA16B7A99D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
